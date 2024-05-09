@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .wallpaper {
+            content: "";
+            background-image: url('https://img.freepik.com/foto-gratis/gran-coleccion-libros-antiguos-estantes-madera-generados-ia_188544-29739.jpg?size=626&ext=jpg&ga=GA1.1.1687694167.1715040000&semt=ais');
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.8; /* Ajusta el valor según sea necesario (0-1) */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wallpaper">
+    <nav class="navbar bg-dark text-white" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="mr-2">
+                    <img src="./img/PikPng.com_opened-book-png_2492827.png" alt="Bootstrap" width="50" height="40" style="margin-bottom: 5px; margin-right: 30px; filter: brightness(500);">
+                </div>
+                <h2 class="mb-0 ml-2">AppBiblioteca</h2>
+            </a>
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./buscarRegistros.html">Buscar</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./crearRegistro.html">Crear</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./actualizarRegistro.html">Actualizar</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./borrarRegistro.html">Eliminar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container d-flex align-items-center mt-3 mb-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card" style="border: 2px double #000; border-radius: 50px;">
+                    <div class="card-body text-center">
+                        <h2>Actualizar registro de libro</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit et corrupti amet distinctio neque? Impedit, modi rem a unde deleniti excepturi quos non incidunt iusto! Perferendis deserunt sed cum earum.</p>
+                        
+                        <form>
+                            <div class="row mb-3 align-items-center">
+                                <label for="tituloObra" class="col-sm-4 col-form-label col-form-label-md">Titulo de la obra:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="border-0 w-100 form-control form-control-sm" placeholder="Ingrese el nombre del autor" id="tituloObra" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="nombreAutor" class="col-sm-4 col-form-label col-form-label-md">Nombre autor:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="border-0 w-100 form-control form-control-sm" placeholder="Ingrese el nombre del autor" id="nombreAutor" required autocomplete="off">
+                                </div>
+                            </div>
+
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="apellidoAutor" class="col-sm-4 col-form-label col-form-label-md">Apellido Autor:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="border-0 w-100 form-control form-control-sm" placeholder="Ingrese el apellido del autor" id="apellidoAutor" required autocomplete="off">
+                                </div>
+                            </div>
+
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="tematicaLibro" class="col-sm-4 col-form-label col-form-label-md">Tematica:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="border-0 w-100 form-control form-control-sm" placeholder="Ingrese la tematica de la obra" id="tematicaLibro" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="lugarLibro" class="col-sm-4 col-form-label col-form-label-md">Lugar:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="border-0 w-100 form-control form-control-sm" placeholder="Ingrese el lugar de origen de la obra" id="lugarLibro" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3 align-items-center">
+                                <label for="editorialLibro" class="col-sm-4 col-form-label col-form-label-md">Editorial:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="border-0 w-100 form-control form-control-sm" placeholder="Ingrese la editorial de la obra" id="editorialLibro" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Si la casilla se encuentra marcada, significa que ya el libro se encuentra en 
+                                    nuestra biblioteca, de lo contrario, deje esta sección desmarcada
+                                </label>
+                            </div>
+
+                    <button type="submit" class="btn bg-warning text-dark btn-lg my-4"><b>Actualizar</b></button>
+                    <a href="#" class="btn bg-light text-dark btn-lg my-4">Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+    <footer class="navbar-expand-lg text-muted bg-dark fixed-bottom" style="height: 40px; display: flex; justify-content: center; align-items: center;">
+        <div class="container-footer text-white">
+            2024 - Página creada por Jhonattan Halcón Casallas Felipe
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
+    
+</div>
+
+</body>
+</html>
